@@ -1,0 +1,18 @@
+{
+  "name": "nodeworkspace",
+  "version": "1.0.0",
+  "description": "nodeproject",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdh5446/gersang.git"
+  },
+  "keywords": [
+    "node.js"
+  ],
+  "author": "mohi",
+  "license": ""
+}
