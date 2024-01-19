@@ -1,8 +1,8 @@
 // Sequelize ORM을 사용한 예시
 const Sequelize = require('sequelize');
-const sequelize = require('../db');
+const connection = require('../db');
 
-const Item = sequelize.define('items', {
+const Item = connection.define('items', {
   item_id: {
     type: Sequelize.INTEGER,
     primaryKey: true, // item_id를 기본 키로 설정
