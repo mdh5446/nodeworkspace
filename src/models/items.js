@@ -14,6 +14,8 @@ const Item = connection.define('items', {
   update_date: Sequelize.DATE
   // 다른 필드들...
 },{
+  charset: "utf8", // 한국어 설정
+  collate: "utf8_general_ci", // 한국어 설정
   timestamps: false, // createdAt과 updatedAt 비활성화
   // id: false // 기본적으로 id가 필요하지 않은 경우에 사용
 });
