@@ -7,6 +7,6 @@ ssh ubuntu@43.202.2.22 <<EOF
     nvm install 21.6.0
     npm install
     npm install -g pm2
-    pm2 restart jenkins.config.js
+    pm2 restart ./src/jenkins.config.js
     exit
 EOF
