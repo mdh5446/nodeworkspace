@@ -7,6 +7,6 @@ ssh ubuntu@43.202.2.22 <<EOF	//CC2-user에 자신이 만든 ec2인스턴스 종�
     nvm install 21.6.0	//젠킨스에서 설정한 node 버전
     npm install
     npm install -g pm2
-    pm2 restart jekins.config.js
+    pm2 restart jenkins.config.js
     exit
 EOF
