@@ -88,7 +88,7 @@ exports.searchItems = async (req, res) => {
     if (items.length > 0) {
       res.json(items);
     } else {
-      res.status(404).send({ message: 'No items found' });
+      res.status(404).send({ message: 'No items found test' });
     }
   } catch (error) {
     errorHandler(error, req, res);
