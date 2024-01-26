@@ -1,4 +1,5 @@
-const Item = require('../models/items');
+const db = require('../models'); // models/index.js 불러오기
+const Item = db.Item;
 const Sequelize = require('sequelize');
 const errorHandler = require('../middlewares/errorHandler');
 
