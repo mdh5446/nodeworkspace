@@ -125,11 +125,7 @@ exports.searchAuctionItems = async (req, res) => {
       });
   
       // 찾은 auction_items을 응답으로 반환
-      if (auctionItems.length > 0) {
-        res.json(auctionItems);
-      } else {
-        res.status(404).send({ message: 'No auction items found' });
-      }
+      res.json(auctionItems);
     } catch (error) {
       errorHandler(error, req, res);
     }

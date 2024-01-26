@@ -86,11 +86,7 @@ exports.searchItems = async (req, res) => {
     });
 
     // 찾은 아이템을 응답으로 반환
-    if (items.length > 0) {
-      res.json(items);
-    } else {
-      res.status(404).send({ message: 'No items found' });
-    }
+    res.json(items);
   } catch (error) {
     errorHandler(error, req, res);
   }
